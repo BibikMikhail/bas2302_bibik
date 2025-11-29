@@ -1,6 +1,10 @@
 spring:
   application:
     name: "demo-application"
+    datasource:
+      url: jdbc:postgresql://localhost:5432/smart_home_db
+      username: ${PG_USER}
+      password: ${PG_PASS}
 
 server:
   port: 8080
